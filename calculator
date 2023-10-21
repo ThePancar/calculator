@@ -1,0 +1,54 @@
+#First Calculator
+def add(a,b):
+    return a+b
+
+def sub(a,b):
+    return a-b
+
+def mul(a,b):
+    return a*b
+
+def div(a,b):
+    return a/b
+
+def mod(a,b):
+    return a%b
+
+def exp(a,b):
+    return a**b
+
+def floor_div(a,b):
+    return a//b
+
+def calculator():
+    while True:
+        print("1.Addition")
+        print("2.Subtraction")
+        print("3.Multiplication")
+        print("4.Division")
+        print("5.Modulus")
+        print("6.Exponent")
+        print("7.Floor Division")
+        print("8.Exit")
+        choice=int(input("Enter your choice: "))
+        if choice==8:
+            break
+        elif choice>8:
+            print("Invalid choice")
+        else:
+            a=int(input("Enter first number: "))
+            b=int(input("Enter second number: "))
+            if choice==1:
+                print(add(a,b))
+            elif choice==2:
+                print(sub(a,b))
+            elif choice==3:
+                print(mul(a,b))
+            elif choice==4:
+                print(div(a,b))
+            elif choice==5:
+                print(mod(a,b))
+            elif choice==6:
+                print(exp(a,b))
+            elif choice==7:
+                print(floor_div(a,b))
